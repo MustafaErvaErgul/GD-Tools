@@ -1,6 +1,6 @@
 @echo off
 REM Package the app with PyInstaller
-python -m PyInstaller --onefile --icon=assets/icon.ico gdtools.py
+python -m PyInstaller --onefile --noconsole --icon=assets/icon.ico gdtools.py
 if %errorlevel% neq 0 (
     echo Packaging failed!
     pause
